@@ -26,7 +26,6 @@ async function SearchImages(){
         imageWrapper.classList.add("search-result");
         imageWrapper.innerHTML=`
         <img src="${result.urls.regular}" alt="${result.alt_description}" />
-        <a href="${result.links.html}" target="_blank">${result.alt_description}</a>
         <h2>${result.alt_description}</h2>
         `
         searchResults.append(imageWrapper);
